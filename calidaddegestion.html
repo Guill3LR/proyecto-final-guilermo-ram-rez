@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITLA - Calidad de Gestión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #ffffff; color: #333; }
+        .bg-itla-blue { background-color: #003366; }
+        .text-itla-blue { color: #003366; }
+        .text-itla-red { color: #E31E24; }
+        
+        
+        .nav-link { font-size: 0.75rem; white-space: nowrap; transition: 0.3s; }
+        .dropdown-menu { border-top: 3px solid #E31E24; border-radius: 0 0 8px 8px; font-size: 0.8rem; border: none; box-shadow: 0px 8px 15px rgba(0,0,0,0.1); }
+        .navbar-dark .navbar-nav .nav-link.active { color: #fff !important; border-bottom: 2px solid #E31E24; }
+
+       
+        .hero-calidad {
+            background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('https://itla.edu.do/wp-content/uploads/2022/10/banner-itla.jpg') center/cover;
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+
+        
+        .section-title-line {
+            font-weight: 700;
+            color: #003366;
+            text-transform: uppercase;
+            border-left: 5px solid #E31E24;
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        .card-estrategica {
+            border: none;
+            border-radius: 15px;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .card-estrategica:hover {
+            background-color: #003366;
+            color: white;
+            transform: translateY(-5px);
+        }
+        .card-estrategica:hover .icon-estrategica { color: #ffffff; }
+        .icon-estrategica { font-size: 2rem; color: #E31E24; transition: 0.3s; }
+
+        .objetivo-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: flex-start;
+        }
+        .objetivo-item i { color: #E31E24; margin-right: 15px; margin-top: 4px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-itla-blue sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="Imagenes/logo-itla-blanco.png" alt="ITLA Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Quiénes Somos</a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="Quienessomos.html">Sobre el ITLA</a></li>
+                            <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Ofertaacademia.html">Oferta Académica</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Institucional</a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="rectoria.html">Rectoría</a></li>
+                            <li><a class="dropdown-item active text-itla-red" href="calidaddegestion.html">Calidad de Gestión</a></li>
+                            <li><a class="dropdown-item" href="transparecia.html">Transparencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gestiondocente.html">Gestión Docente</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cafedigital.html">Café Digital</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-calidad">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-uppercase">Calidad de Gestión</h1>
+            <p class="lead opacity-75">Comprometidos con la excelencia y la mejora continua.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title-line">Ejes Estratégicos</h2>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card-estrategica p-4 text-center shadow-sm">
+                    <i class="bi bi-mortarboard-fill icon-estrategica mb-3"></i>
+                    <h6 class="fw-bold">Docencia y Formación</h6>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card-estrategica p-4 text-center shadow-sm">
+                    <i class="bi bi-gear-wide-connected icon-estrategica mb-3"></i>
+                    <h6 class="fw-bold">Investigación e Innovación</h6>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card-estrategica p-4 text-center shadow-sm">
+                    <i class="bi bi-people-fill icon-estrategica mb-3"></i>
+                    <h6 class="fw-bold">Vinculación con el Entorno</h6>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card-estrategica p-4 text-center shadow-sm">
+                    <i class="bi bi-building-check icon-estrategica mb-3"></i>
+                    <h6 class="fw-bold">Fortalecimiento Institucional</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <h2 class="section-title-line">Objetivos de Calidad</h2>
+                <div class="objetivo-item">
+                    <i class="bi bi-check2-square"></i>
+                    <p class="mb-0">Asegurar la pertinencia y actualización de la oferta académica conforme a las demandas del mercado laboral.</p>
+                </div>
+                <div class="objetivo-item">
+                    <i class="bi bi-check2-square"></i>
+                    <p class="mb-0">Garantizar la eficiencia de los procesos administrativos y académicos mediante la mejora continua.</p>
+                </div>
+                <div class="objetivo-item">
+                    <i class="bi bi-check2-square"></i>
+                    <p class="mb-0">Fortalecer la competencia del personal docente y administrativo mediante programas de capacitación.</p>
+                </div>
+                <div class="objetivo-item">
+                    <i class="bi bi-check2-square"></i>
+                    <p class="mb-0">Lograr altos niveles de satisfacción en nuestros estudiantes y partes interesadas.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="p-4 bg-itla-blue text-white rounded-4 shadow h-100">
+                    <h3 class="fw-bold border-bottom border-danger pb-3 mb-4">Compromiso ITLA</h3>
+                    <p class="opacity-75">En el ITLA estamos comprometidos con la satisfacción de nuestros clientes, a través de la mejora contínua de nuestros procesos. El Departamento de Calidad en la Gestión, es el encargado del sistema de garantía interno de calidad. Vela por el cumplimiento de las políticas y procedimientos institucionales. <p></p>
+                        El Sistema de Gestión de la Calidad del ITLA se fundamenta en estándares internacionales, asegurando que cada proceso esté diseñado para el éxito de nuestros estudiantes.</p>
+                    <div class="text-center mt-4">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+      <footer class="bg-itla-blue text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://itla.edu.do/wp-content/uploads/2022/10/logo-itla-blanco.png" height="50" class="mb-3">
+                    <p class="small opacity-75">Excelencia en formación técnica.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-4 border-bottom border-danger pb-2 d-inline-block text-uppercase">Contáctanos</h6>
+                    <p class="small mb-1"><i class="bi bi-telephone me-2"></i>(809)-738-4852</p>
+                    <p class="small"><i class="bi bi-envelope me-2"></i>info@itla.edu.do</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-4 border-bottom border-danger pb-2 d-inline-block text-uppercase">Búscanos</h6>
+                    <p class="small opacity-75">Autopista Las Américas, Km. 27, R.D.</p>
+                </div>
+            </div>
+            <hr class="my-4 opacity-25">
+            <p class="text-center small opacity-50">© 2026 ITLA - Rediseño Académico</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
